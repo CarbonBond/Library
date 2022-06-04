@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+    <script src="script.js" defer>
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='container'>
+        <div class="add" id="myForm">
+            <form class="form">
+                <div class="formItem">
+                    <label for="bTitle">Title</label><br>
+                    <input type="text" id="bTilte" name="bTitle"><br>
+                </div>
+                <div class="formItem">
+                    <label for="bAuthor">Author</label><br>
+                    <input type="text" id="bAuthor" name="bAuthor"><br>
+                </div>
+                <div class="formItem">
+                    <label for="bPages">Pages</label><br>
+                    <input type="text" id="bPages" name="bPages"><br>
+                </div>
+                <div class="formItem">
+                    <div>Status</div>
+                    <select id="bRead">
+                        <option>Planned</option>
+                        <option>Dropped</option>
+                        <option>On Hold</option>
+                        <option>Reading</option>
+                        <option>Completed</option>
+                    </select>
+                </div>
+            </form>
+            <div class="formItem">
+                <button class='addButton'> Add </button>
+                <button class='cancelButton'> Cancel </button>
+            </div>
+        </div>
+        <div class="header">
+            <div class="title"><h1>Library</h1></div>
+        </div>
+        <div class="bookContainer">
+            <div class="bookAdd addToggle">+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

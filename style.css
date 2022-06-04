@@ -1,0 +1,173 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(61, 61, 61);
+    color:lightgray;
+    display: flex;
+    justify-content: center;
+    text-size-adjust: none;
+}
+
+.container {
+    display: flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.title{
+    float:left;
+    text-align: center;
+    flex:1;
+    flex-grow: 2;
+}
+.controlContainer{
+    float:right;
+    text-align: center;
+    flex:1;
+    flex-grow: 1;
+}
+
+.bookContainer {
+    display: flex;
+    height:auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+.book{
+    min-height: 250px;
+    min-width: 150px;
+    height: 40vh;
+    width: 30vh;
+    background-color: rgb(255, 255, 255);
+    word-wrap: normal;
+    margin: 15px;
+    box-shadow: 5px 5px 10px 0px black;
+    color:black;
+    border-radius: 3%;
+    font-size:16px;
+}
+
+.bookAdd{
+    min-height: 250px;
+    min-width: 150px;
+    height: 40vh;
+    width: 30vh;
+    word-wrap: normal;
+    margin: 15px;
+    color:black;
+    border-radius: 3%;
+    background-color: rgba(231, 205, 188, 0);
+    box-shadow: 0px 0px 0px 0px;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    justify-content:center;
+    user-select: none;
+}
+
+
+.addToggle:hover{
+    background-color: rgba(0, 253, 21, 0.61);
+    cursor: pointer;
+}
+.add{
+    align-self: center;
+    justify-self: center;
+    position: fixed;
+    font-size: 14px;
+    min-width: 400px;
+    min-height: 400PX;
+    height:auto;
+    background-color: white;
+    box-shadow: 0px 0px 0px 5000px rgba(0, 0, 0, 0.692);
+    top:10%;
+    color:black;
+    padding:10px;
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.form{
+    width:90%;
+    height:90%;
+}
+input{
+    width:100%;
+    margin-top:6px;
+}
+.formItem{
+    margin:10%;
+}
+@media only screen and (max-width: 500px){
+    .add{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-height: 600px){
+    .add{
+        height: 100%;
+    }
+}
+
+.bookLayout{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+
+.bookTitle{
+    flex:2 1 auto;
+    text-align: center;
+    padding:8px;
+    
+}
+
+.bookAuth{ 
+    flex:2 1 auto;
+    text-align: center;
+    padding:8px;
+}
+
+.bookRead{
+    flex:1 1 auto;
+    text-align: center;
+}
+
+.bookFooter{
+    flex:0.5 1 auto;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 10px 10px 10px;
+    justify-content: space-between;
+}
+.bookPages{
+    float:right;
+}
+
+.removeButton{
+    box-sizing:border-box;
+    border: 1px solid black;
+    background-color: rgb(190, 0, 0);
+    border-radius: 12%;
+    width:20px;
+    height:20px;
+    text-align: center;
+}
+.removeButton:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+
+}
